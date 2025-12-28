@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+/* 1 Блок */
+
+.IntroBlock{
+    background-color: #FBF0F4;
+}
+.IntroBlock > *{
+    padding: 0 15%
+}
+
+/* Шапка */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 80px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav > *{
+    padding: 2rem;
+    color: #6e6e6e
+}
+.Highlight{
+    color: #D23166;
+    font-weight: bold;
+}
+
+/* Прочее */
+button {
+    background-color: #D23166;
+    color: white;
+    height: 3rem;
+    width: 10rem;
+    border: none;              
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #c73062; 
+}
+
+
+/* Главный Контейнер */
+
+.MainContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5% 0 0 15%;
+}
+
+/* Текст */
+.MainText{
+    padding: 15% 0%;
+}
+.MainTextSubTitle{
+    font-weight: bold;
+}
+.MainTitle{
+    font-weight: bold;
+    font-size: 4rem;
+}
+.MainTextGray{
+    font-size: 1.25rem;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin-right: 35%; 
+    color:#6e6e6e;
+}
+
+/* Картинка */
+.MainIceCream{
+    place-items: center;
+    display: flex;
+    margin-left: -400px;
+    width: auto;
+}
+.IceCreamImg{
+    height: 900px;
+}
+
+
+/* Блок Квадратов */
+
+.SquaresBlock{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 15%
+}
+.Square{
+    border: 1px solid #f7f7f7;
+    border-radius: 15px;
+    width: 18.5%;
+    padding: 2%;
+}
+.SquareImg{
+    display: flex;
+    justify-content: center;
+}
+.SquareImg > *{
+    padding: 5%;
+    height: 55px;
+}
+.SquareText{
+    text-align: center;
+    display: flexbox;
+}
+.SquareTitle{
+    padding: 5% 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.SquareTextGray{
+    color: #6e6e6e;
+}
+#SquareHighlight{
+    border-color: white;
+    box-shadow: 20px 20px 50px #00000008;
+}
+
+
+/* Детали */
+
+.DetailsBlock{
+
+    background-color: #FBF0F4;
+}
+.DetailsBlock > *{
+    padding: 0 15%;
+}
+.Details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.DetailsTitle{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+.DetailsTextGray{
+    font-size: 1.1rem;
+    padding: 40px 0;
+    color: #6e6e6e;
+}
+.DetailsImg{
+    width: auto;
+    height: auto;
+}
+
+
+/* Продукты */
+
+.ProductBlock > *{
+    padding: 0 15%;
+}
+
+/* Шапка продуктов */
+.ProductQuote{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 5.5% 0;
+}
+.ProductNav{
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    color: #6e6e6e;
+    font-size: 1.1rem;
+}
+#Underline{
+    color: black;
+    font-weight: bold;
+    text-decoration: underline 3px solid #D23166;
+}
+
+/* Продукт */
+.Product{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.Product > *{
+    padding: 0;
+}
+.ProductImg{
+    margin-left:5%;
+}
+.ProductText{
+    margin-left: 10%;
+    align-self: center;
+}
+.ProductTitle{
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+.ProductTextGray{
+    color: #6e6e6e;
+    padding: 3% 0;
+}
+.ProductPrice{
+    display: flex;
+    padding-bottom: 5%;
+}
+.Price{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.Discount{
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 0 0.75rem;
+    color: #6e6e6e;
+    align-self: center;
+    text-decoration: line-through 2px;
+}
+#Inverse{
+    direction: rtl;
+}
+#Inverse > *{
+    margin-left: 0;
+    padding-right: 5%;
+}
+
+
+/* */
+
+.ReviewBlock{
+    display: flex;
+    justify-content: space-between;
+    padding: 7.5% 15%;
+}
+
+
+.Profile{
+    padding-top: 50px;
+    display: flex;
+}
+.ProfileImg{
+    padding-right: 2rem;
+}
+.ProfileName{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.Quote{
+    display: flex;
+    padding: 5% 0;
+    margin-right: 40%;
+    vertical-align: top;
+}
+
+
+.Reviews > *{
+    vertical-align:middle;
+    padding-right: 15px;
+}
+
+
+/* */
+
+footer{
+    background-color: black;
+}
+footer > *{
+    padding: 0 15%;
+    color: white;
+}
+.logoFooter{
+    padding-top: 5%;
+}
+.FooterContent{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+.Follow{
+    color:white;
+    padding: 1rem 0;
+}
+.Contacts > *{
+    width: 25px;
+}
+.FooterContent > *{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.25rem;
+}
+.FooterTextGray{
+    padding-top: 2rem;
+    padding-bottom: 5%;
+    width: 350px;
+}
+.FooterHighlight{
+    color:white;
+    padding-bottom: 1rem;
+}
+.FooterNav > *{
+    padding-bottom: 1rem;
+}
+.Info > *{
+    padding-bottom: 1rem;
+}
+input{
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: black;
+    border-color: #c73062;
+    color: white;
+}
+.Newsletter{
+    padding-bottom: 1rem;
+}
+.ContactsNews{
+    padding-top: 1rem;
+}
