@@ -1,151 +1,122 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты — Автомастерская «ПрофиСервис»</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <!-- Шапка -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">ПрофиСервис</div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="about.html">О нас</a></li>
-                        <li><a href="services.html">Услуги</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <!-- Раздел «Контакты» -->
-    <section class="contact">
-        <div class="container">
-            <h1>Свяжитесь с нами</h1>
-            <div class="contact-inner">
-                <!-- Информация -->
-                <div class="contact-info">
-                    <h2>Наша информация</h2>
-                    
-                    <div class="info-item">
-                        <div class="icon">📍</div>
-                        <div class="info-text">
-                            <strong>Адрес</strong>
-                            г. Москва, ул. Автомобильная, 123, <br>
-                            территория автотехцентра «ПрофиСервис»
-                        </div>
+<!-- Раздел «Контакты» -->
+<section class="contact">
+    <div class="container">
+        <h1>Свяжитесь с нами</h1>
+        <div class="contact-inner">
+            <!-- Информация -->
+            <div class="contact-info">
+                <h2>Наша информация</h2>
+                
+                <div class="info-item">
+                    <div class="icon">📍</div>
+                    <div class="info-text">
+                        <strong>Адрес</strong>
+                        г. Москва, ул. Автомобильная, 123, <br>
+                        территория автотехцентра «ПрофиСервис»
                     </div>
+                </div>
 
-                    <div class="info-item">
-                        <div class="icon">📞</div>
-                        <div class="infos">
-                            <strong>Телефон</strong>
-                                                        <strong>Телефон</strong>
-                            +7 (495) 123‑45‑67<br>
-                            +7 (495) 888‑99‑00 (сервисная служба)
-                        </div>
+                <div class="info-item">
+                    <div class="icon">📞</div>
+                    <div class="infos">
+                        <strong>Телефон</strong>
+                                                    <strong>Телефон</strong>
+                        +7 (495) 123‑45‑67<br>
+                        +7 (495) 888‑99‑00 (сервисная служба)
                     </div>
+                </div>
 
-                    <div class="info-item">
-                        <div class="icon">✉️</div>
-                        <div class="info-text">
-                            <strong>Email</strong>
-                            info@profiservice.ru<br>
-                            zakaz@profiservice.ru (заявки на ремонт)
-                        </div>
+                <div class="info-item">
+                    <div class="icon">✉️</div>
+                    <div class="info-text">
+                        <strong>Email</strong>
+                        info@profiservice.ru<br>
+                        zakaz@profiservice.ru (заявки на ремонт)
                     </div>
+                </div>
 
-                    <div class="info-item">
-                        <div class="icon">⏰</div>
-                        <div class="info-text">
-                            <strong>Режим работы</strong>
-                            Пн–сб: 09:00–20:00<br>
-                            Вс: 10:00–18:00<br>
-                            Без перерывов
-                        </div>
+                <div class="info-item">
+                    <div class="icon">⏰</div>
+                    <div class="info-text">
+                        <strong>Режим работы</strong>
+                        Пн–сб: 09:00–20:00<br>
+                        Вс: 10:00–18:00<br>
+                        Без перерывов
                     </div>
+                </div>
 
-                    <div class="info-item">
-                        <div class="icon">💳</div>
-                        <div class="info-text">
-                            <strong>Способы оплаты</strong>
-                            Наличные, банковская карта, перевод,<br>
-                            рассрочка (при ремонте от 30 000 ₽)
-                        </div>
+                <div class="info-item">
+                    <div class="icon">💳</div>
+                    <div class="info-text">
+                        <strong>Способы оплаты</strong>
+                        Наличные, банковская карта, перевод,<br>
+                        рассрочка (при ремонте от 30 000 ₽)
                     </div>
                 </div>
             </div>
-
-            <!-- Карта -->
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=..."
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-
-            <!-- Форма обратной связи -->
-            <div class="contact-form">
-                <h3>Оставьте заявку</h3>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Ваше имя</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Телефон</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="service">Услуга</label>
-                        <select id="service" name="service">
-                            <option value="">Выберите услугу</option>
-                            <option value="to">Техническое обслуживание</option>
-                            <option value="diagnostics">Диагностика</option>
-                            <option value="engine">Ремонт двигателя</option>
-                            <option value="body">Кузовной ремонт</option>
-                            <option value="tires">Шиномонтаж</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Комментарий</label>
-                        <textarea id="message" name="message" placeholder="Опишите проблему или задайте вопрос..."></textarea>
-                    </div>
-
-                    <button type="submit">Отправить заявку</button>
-                </form>
-            </div>
         </div>
-    </section>
 
-    <!-- Подвал -->
-    <footer>
-        <div class="container">
-            <p>© 2025 Автомастерская «ПрофиСервис». Все права защищены.</p>
-            <p>г. Москва, ул. Автомобильная, 123 | +7 (495) 123‑45‑67</p>
-            <p>
-                <a href="privacy.html" style="color: #aaa; text-decoration: none;">Политика конфиденциальности</a>
-                |
-                <a href="terms.html" style="color: #aaa; text-decoration: none;">Условия использования</a>
-            </p>
+        <!-- Карта -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=..."
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
-    </footer>
 
-</body>
-</html>
+        <!-- Форма обратной связи -->
+        <div class="contact-form">
+            <h3>Оставьте заявку</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Услуга</label>
+                    <select id="service" name="service">
+                        <option value="">Выберите услугу</option>
+                        <option value="to">Техническое обслуживание</option>
+                        <option value="diagnostics">Диагностика</option>
+                        <option value="engine">Ремонт двигателя</option>
+                        <option value="body">Кузовной ремонт</option>
+                        <option value="tires">Шиномонтаж</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Комментарий</label>
+                    <textarea id="message" name="message" placeholder="Опишите проблему или задайте вопрос..."></textarea>
+                </div>
+
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Подвал -->
+<footer>
+    <div class="container">
+        <p>© 2025 Автомастерская «ПрофиСервис». Все права защищены.</p>
+        <p>г. Москва, ул. Автомобильная, 123 | +7 (495) 123‑45‑67</p>
+        <p>
+            <a href="privacy.html" style="color: #aaa; text-decoration: none;">Политика конфиденциальности</a>
+            |
+            <a href="terms.html" style="color: #aaa; text-decoration: none;">Условия использования</a>
+        </p>
+    </div>
+</footer>
