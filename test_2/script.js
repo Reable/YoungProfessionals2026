@@ -17,17 +17,25 @@ function navigation(event) {
         event.preventDefault();
         const page = event.target.getAttribute('href');
         loadPage(page);
-        window.history.pushState({}, '', `#${page}`);
+        window.history.pushState({page}, '', `#${page}`);
     }
 }
 
 // Инициализация приложения
 function initSPA() {
-    // Загружаем начальную страницу (по умолчанию home)
-    loadPage('home');
+    window.addEventListener('popstate', (event) => {
+        event.preventDefault()
+        if (event.state && event.state.page) {
+            loadPage(event.state.page);
+        } else {
+            loadPage("home");
+        }
+    });
 
-    // Добавляем обработчик клика на навигацию
+    loadPage("home")
+
     document.querySelector('nav').addEventListener('click', navigation);
 }
 
 document.addEventListener('DOMContentLoaded', initSPA);
+
